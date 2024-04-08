@@ -1,0 +1,28 @@
+{
+  "name": "tpyescript3.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:build": "tsc -w",
+    "dev:start": "nodemon node ./build/crowller.js",
+    "dev": "concurrently npm:dev:*"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "superagent": "^7.1.2"
+  },
+  "devDependencies": {
+    "@types/superagent": "^4.1.15",
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
